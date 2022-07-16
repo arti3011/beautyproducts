@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap.css">
+			<link rel="stylesheet" href="assets/style.css">
+	<title>js</title>
+  </head>
+ <body>
+
+ 	<header>
+ 	</header>
+
+ 	<section>
+ 		<div class="container">
+ 			<div class="row">
+ 				<div class="col-10">
+ 					<form id="forms">
+ 						<h3>Registration form</h3>
+				  
+				  <div class="form-group">
+				    <label for="formGroupExampleInput">Name:</label>
+				    <input type="text" class="form-control" id="name" placeholder="name">
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="formGroupExampleInput2">Last Name:</label>
+				    <input type="text" class="form-control" id="L-name" placeholder="Last name">
+				  </div>
+					
+					<button type="Submit">Submit</button>
+
+					<P id="demo">dsgsdg</P>
+
+				
+					</form>
+ 				</div><!-- col -->
+ 				
+ 			</div><!-- row -->
+ 		</div><!-- container -->
+ 		
+ 	</section>
+
+
+
+
+<script src="assets/jquery.js"></script>
+ 	<script>
+
+ 		document.getElementById("demo").innerHTML = "hello world"
+
+ 		document.getElementById("demo").style.fontSize= "25px";
+</script> 
+
+<script>
+ 		var a = 10;
+ 		var b = 20;
+
+ 		var c = a+b;
+document.write(typeof a); 
+document.write("<br>");
+
+							const x = {type:"Fiat", model:"500", color:"white"};
+								x.model ="abc";
+							document.getElementById("demo").innerHTML = "Car owner is" + x.model;
+ 	</script>
+
+ <script>
+$(document).ready(function(){
+
+	var a = $("#name").val();
+  $("#forms").submit(function(){
+     $("#L-name").val(a);
+
+
+     
+  });
+
+});
+
+
+
+ 
+
+
+ 	
+for(let a = 1; a <= 10; a++){
+	document.write(a+ '  hello <br>');
+}
+
+
+
+
+</script>
+
+ </body>
+ </html>
